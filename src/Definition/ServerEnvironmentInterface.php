@@ -14,15 +14,6 @@ interface ServerEnvironmentInterface
     public function get(string $key): string;
     
     /**
-     * Set an environment variable
-     *
-     * @param string $key The environment variable name
-     * @param string $value The environment variable value
-     * @throws \AlanVdb\Server\Exception\InvalidServerEnvironmentParamProvided If parameters are invalid
-     */
-    public function set(string $key, string $value): void;
-    
-    /**
      * Check if environment variable exists
      *
      * @param string $key The environment variable name
